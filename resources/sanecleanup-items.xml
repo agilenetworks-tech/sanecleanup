@@ -8,7 +8,7 @@
                     <key attribute="process" />
                     <key attribute="modifiedTime" />
                     <key attribute="itemtype"/>
-                    <include attribute="pk"/>
+                    <key attribute="pk"/>
                 </index>
             </indexes>
         </itemtype>
@@ -20,7 +20,7 @@
                     <key attribute="modifiedTime" />
                     <key attribute="message" />
                     <key attribute="itemtype"/>
-                    <include attribute="pk"/>
+                    <key attribute="pk"/>
                 </index>
             </indexes>
         </itemtype>
@@ -32,7 +32,7 @@
                     <key attribute="saveTime" />
                     <key attribute="modifiedTime" />
                     <key attribute="itemtype"/>
-                    <include attribute="pk"/>
+                    <key attribute="pk"/>
                 </index>
             </indexes>
         </itemtype>
@@ -42,7 +42,7 @@
                 <index name="sanecleanup">
                     <key attribute="modifiedTime" />
                     <key attribute="itemtype"/>
-                    <include attribute="pk"/>
+                    <key attribute="pk"/>
                 </index>
             </indexes>
         </itemtype>
@@ -53,7 +53,7 @@
                     <key attribute="modifiedItem" />
                     <key attribute="modifiedTime" />
                     <key attribute="itemtype"/>
-                    <include attribute="pk"/>
+                    <key attribute="pk"/>
                 </index>
             </indexes>
         </itemtype>
@@ -64,7 +64,7 @@
                     <key attribute="parent" />
                     <key attribute="itemtype" />
                     <key attribute="itemtype"/>
-                    <include attribute="pk"/>
+                    <key attribute="pk"/>
                 </index>
             </indexes>
         </itemtype>
@@ -76,7 +76,7 @@
                     <key attribute="modifiedtime" />
                     <key attribute="job" />
                     <key attribute="itemtype"/>
-                    <include attribute="pk"/>
+                    <key attribute="pk"/>
                 </index>
             </indexes>
         </itemtype>
@@ -86,7 +86,7 @@
                     <key attribute="code" />
                     <key attribute="modifiedtime" />
                     <key attribute="itemtype"/>
-                    <include attribute="pk"/>
+                    <key attribute="pk"/>
                 </index>
             </indexes>
         </itemtype>
@@ -97,7 +97,7 @@
                     <key attribute="code" />
                     <key attribute="impExImportCronJob" />
                     <key attribute="itemtype"/>
-                    <include attribute="pk"/>
+                    <key attribute="pk"/>
                 </index>
             </indexes>
         </itemtype>
@@ -107,7 +107,7 @@
                     <key attribute="importContentCode" />
                     <key attribute="process" />
                     <key attribute="itemtype"/>
-                    <include attribute="pk"/>
+                    <key attribute="pk"/>
                 </index>
             </indexes>
         </itemtype>
@@ -116,7 +116,7 @@
                 <index name="sanecleanup">
                     <key attribute="code" />
                     <key attribute="itemtype"/>
-                    <include attribute="pk"/>
+                    <key attribute="pk"/>
                 </index>
             </indexes>
         </itemtype>
@@ -127,7 +127,7 @@
                     <key attribute="state" />
                     <key attribute="modifiedtime" />
                     <key attribute="itemtype"/>
-                    <include attribute="pk"/>
+                    <key attribute="pk"/>
                 </index>
             </indexes>
         </itemtype>
@@ -137,7 +137,7 @@
                     <key attribute="task" />
                     <key attribute="modifiedtime" />
                     <key attribute="itemtype"/>
-                    <include attribute="pk"/>
+                    <key attribute="pk"/>
                 </index>
             </indexes>
         </itemtype>
@@ -147,7 +147,7 @@
                     <key attribute="process" />
                     <key attribute="modifiedtime" />
                     <key attribute="itemtype"/>
-                    <include attribute="pk"/>
+                    <key attribute="pk"/>
                 </index>
             </indexes>
         </itemtype>
@@ -157,7 +157,7 @@
                     <key attribute="process" />
                     <key attribute="modifiedtime" />
                     <key attribute="itemtype"/>
-                    <include attribute="pk"/>
+                    <key attribute="pk"/>
                 </index>
             </indexes>
         </itemtype>
@@ -167,7 +167,7 @@
                     <key attribute="process" />
                     <key attribute="modifiedtime" />
                     <key attribute="itemtype"/>
-                    <include attribute="pk"/>
+                    <key attribute="pk"/>
                 </index>
             </indexes>
         </itemtype>
@@ -179,7 +179,7 @@
                     <key attribute="kieBase" />
                     <key attribute="version" />
                     <key attribute="itemtype"/>
-                    <include attribute="pk"/>
+                    <key attribute="pk"/>
                 </index>
             </indexes>
         </itemtype>
@@ -190,7 +190,7 @@
                     <key attribute="status" />
                     <key attribute="enddate" />
                     <key attribute="itemtype"/>
-                    <include attribute="pk"/>
+                    <key attribute="pk"/>
                 </index>
             </indexes>
         </itemtype>
@@ -201,7 +201,7 @@
                     <key attribute="endTime" />
                     <key attribute="modifiedtime" />
                     <key attribute="itemtype"/>
-                    <include attribute="pk"/>
+                    <key attribute="pk"/>
                 </index>
             </indexes>
         </itemtype>
