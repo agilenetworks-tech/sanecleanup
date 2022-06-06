@@ -1,14 +1,15 @@
 # sanecleanup
 
-![SAP Commerce 1811+](https://img.shields.io/badge/Commerce-2005+-0051ab?logo=SAP)
-
-Sensible defaults for data retention and cleanup for SAP Commerce, based on my CX Works article [Data Maintenance and Cleanup][article]
+Sensible defaults for data retention and cleanup for SAP Commerce, based on CX Works article [Data Maintenance and Cleanup][article]
 
 ## How-To
 
-1. Download the latest release
+1. Checkout the latest version
+    ````
+    git clone https://github.com/agilenetworks-tech/sanecleanup.git
+    ````
 1. Unpack to `hybris/bin/custom`
-1. If possible, disable saved values / change history (ref. [help.sap.com][stored], further recommendations in my [article][stored-kill])
+1. If possible, disable saved values / change history (ref. [help.sap.com][stored], further recommendations in [article][stored-kill])
 1. Add extension to your `localextensions.xml`
 
     ````xml
@@ -31,7 +32,7 @@ Sensible defaults for data retention and cleanup for SAP Commerce, based on my C
     > ```
 
 **WARNING**\
-The very first execution of the retention cron jobs will take a while, depending on how long your poject
+The very first execution of the retention cron jobs will take a while, depending on how long your project
 is already live and if you have cleaned up anything in the past.
 
 Consider performing a [one-time cleanup][one] before adding the extension / enabling the retention rules.
@@ -43,7 +44,7 @@ The job will remove all log files except the five most recent logs per CronJob.
 
 ## Do I have to clean up?
 
-If have never even thought about that topic - yes!
+If I have never even thought about that topic - yes!
 
 You can run the following scripts in the administration console to get a quick overview:
 
@@ -187,7 +188,7 @@ ORDER BY
 
 </td><td>
 
-Are there too many (>10) outdated, auto-geneated jobs in your system?
+Are there too many (>10) outdated, auto-generated jobs in your system?
 
 </td></tr>
 <tr><td>CronJobHistory</td><td>
@@ -459,7 +460,7 @@ FROM
 
 Excessive amount of session? This is hard to generalize as it highly depends on your site's traffic, but if you are near or over 5 digits, it's probably too much.
 
-Simarly, stale sessions (e.g older than a day) don't need to be retained.
+Similarly, stale sessions (e.g older than a day) don't need to be retained.
 
 </td></tr>
 <tr><td>TaskCondition</td><td>
@@ -477,7 +478,7 @@ WHERE
 
 </td><td>
 
-Is there an excessive amount of "premature events"? Or very old (older than a a few weeks) events?
+Is there an excessive amount of "premature events"? Or very old (older than a few weeks) events?
 
 https://help.sap.com/viewer/d0224eca81e249cb821f2cdf45a82ace/2011/en-US/7e8ff9d7653f43e8890bc8eb395d52a7.html
 
@@ -486,16 +487,6 @@ https://help.sap.com/viewer/d0224eca81e249cb821f2cdf45a82ace/2011/en-US/7e8ff9d7
 <!-- @queries-end -->
 
 
-## Support 
-
-Please open an [issue] describing your problem or your feature request.
-
-## Contributing
-
-Any and all pull requests are welcome.\
-Please describe your change and the motiviation behind it.
-
-[issue]: https://github.com/sap-commerce-tools/sanecleanup/issues
 [article]: https://www.sap.com/cxworks/article/456895555/data_maintenance_and_cleanup
 [one]: https://www.sap.com/cxworks/article/456895555/data_maintenance_and_cleanup#DataMaintenanceandCleanup-One-timeCleanUp
 [stored]: https://help.sap.com/viewer/d0224eca81e249cb821f2cdf45a82ace/LATEST/en-US/076cde47206048b9ada3fa0d336c1060.html
